@@ -4,26 +4,27 @@
 **EN:** Development of a System for Early Detection of Agricultural Drought in Kazakhstan Based on Satellite Data and Machine Learning Methods
 **KK:** Спутниктік деректер мен машиналық оқыту әдістері негізінде Қазақстандағы ауыл шаруашылығы құрғақшылығын ерте анықтау жүйесін әзірлеу
 
-## Кратко
-Система собирает спутниковые (MODIS) и погодные данные по областям Казахстана, сравнивает текущий сезон с историей и выдаёт раннюю оценку риска засухи и прогноз урожайности яровой пшеницы на разные сроки до уборки, с объяснением результата.
+## Summary
+The system collects satellite (MODIS) and weather data for the regions of Kazakhstan, compares the current season with the historical record, and produces an early drought-risk assessment and a spring wheat yield forecast at several lead times before harvest, with an explanation of each result.
 
-## Проблема, пользователи, ожидаемый результат
+## Problem, users, expected outcome
 См. [docs/01-proposal.md](docs/01-proposal.md).
 
-## Команда и руководитель
+## Team and supervisor
 | Andreyev Alexander | <240848@astanait.edu.kz> |
-| Руководитель: Bakiyeva Aigerim |
 
-## Объём и статус
-- Регион: богарные зерновые области севера и центра (орошаемый юг вне объёма).
-- Статус: этап предзащиты 1 (анализ и проектирование). Код: каркас, выгрузка данных в разработке.
+| supervisor: Bakiyeva Aigerim |
 
-## Технологии (выбранные)
-Python (pandas, scikit-learn, LightGBM, SHAP), Google Earth Engine (`earthengine-api`), Parquet/GeoPackage, FastAPI, Streamlit (карта и дашборд). Обоснование: [docs/05-technology-comparison.md](docs/05-technology-comparison.md).
+## Scope and status
+- Region: rain-fed grain regions of northern and central Kazakhstan (irrigated south is out of scope).
+- Status: pre-defense 1 stage (analysis and design). Code: skeleton in place, data ingestion in progress.
 
-## Ссылки
-- YouTrack: <ссылка на проект>
-- Документация: [docs/](docs/), чек-лист предзащиты: [docs/00-predefense-checklist.md](docs/00-predefense-checklist.md)
+## Technologies (selected)
+Python (pandas, scikit-learn, LightGBM, SHAP), Google Earth Engine (`earthengine-api`), Parquet/GeoPackage, FastAPI, Streamlit (map and dashboard). Rationale: [docs/05-technology-comparison.md](docs/05-technology-comparison.md).
 
-## Запуск и тесты
-Будет добавлено, когда появится исполняемый код (`make data`, `make train`, `make app`, `pytest`).
+## Links
+- YouTrack: <project link>
+- Documentation: [docs/](docs/), pre-defense checklist: [docs/00-predefense-checklist.md](docs/00-predefense-checklist.md)
+
+## Running and testing
+To be added once executable code exists (`make data`, `make train`, `make app`, `pytest`).
