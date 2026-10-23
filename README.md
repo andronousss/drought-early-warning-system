@@ -13,7 +13,7 @@ The system collects satellite (MODIS) and weather data for the regions of Kazakh
 | supervisor: Bakiyeva Aigerim |
 
 
-## Problem, users, expected outcome
+# 2. Proposal
 
 ### Problem statement
 Grain production in Kazakhstan is largely rain-fed and depends on precipitation, so drought directly reduces yield. Final yield and loss figures are published by the Bureau of National Statistics only after harvest (for example, the 2025 publication "Gross harvest of agricultural crops" reports yield and the area of lost crops by region), which is too late for operational decisions. Satellite and weather data are openly available and updated regularly, but they are not combined into a single tool that compares the current season with a region's history, estimates risk in advance, and explains the estimate.
