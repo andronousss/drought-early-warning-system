@@ -231,6 +231,30 @@ The interface is readable on a phone.
 README and run instructions are provided.
 *Accepted when:* a new person runs the project from the instructions.
 
+# 7. Diagrams
+
+### 1. System Context Diagram
+
+<img width="816" height="497" alt="image" src="https://github.com/user-attachments/assets/1f85ea3d-70bf-483b-9cab-611125833c37" />
+
+### 2. Use Case Diagram
+
+<img width="433" height="781" alt="image" src="https://github.com/user-attachments/assets/7130076a-1f39-48ca-a85d-43ceac65861f" />
+
+
+### 3. Component Diagram (Draft)
+
+<img width="1339" height="720" alt="image" src="https://github.com/user-attachments/assets/009e31ba-364e-4336-a9aa-43b6a793b2b5" />
+
+
+
+# 8. Figma prototype
+
+<img width="974" height="648" alt="image" src="https://github.com/user-attachments/assets/f3715113-4bc0-446c-9833-44527a4653e2" />
+
+<img width="974" height="649" alt="image" src="https://github.com/user-attachments/assets/7eb28664-f1fd-499f-a7da-52217769d9c7" />
+
+
 
 ## Technologies (selected)
 Python (pandas, scikit-learn, LightGBM, SHAP), Google Earth Engine (`earthengine-api`), Parquet/GeoPackage, FastAPI, Streamlit (map and dashboard). Rationale: [docs/05-technology-comparison.md](docs/05-technology-comparison.md). (to be updated)
