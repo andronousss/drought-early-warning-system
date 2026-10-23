@@ -20,10 +20,10 @@ The system collects satellite (MODIS) and weather data for the regions of Kazakh
 - Status: pre-defense 1 stage (analysis and design). Code: skeleton in place, data ingestion in progress.
 
 ## Technologies (selected)
-Python (pandas, scikit-learn, LightGBM, SHAP), Google Earth Engine (`earthengine-api`), Parquet/GeoPackage, FastAPI, Streamlit (map and dashboard). Rationale: [docs/05-technology-comparison.md](docs/05-technology-comparison.md).
+Python (pandas, scikit-learn, LightGBM, SHAP), Google Earth Engine (`earthengine-api`), Parquet/GeoPackage, FastAPI, Streamlit (map and dashboard). Rationale: [docs/05-technology-comparison.md](docs/05-technology-comparison.md). (to be updated)
 
 ## Links
-- YouTrack: <project link>
+- YouTrack: https://andronousss.youtrack.cloud/projects/DIP
 - Documentation: [docs/](docs/), pre-defense checklist: [docs/00-predefense-checklist.md](docs/00-predefense-checklist.md)
 
 ## Running and testing
