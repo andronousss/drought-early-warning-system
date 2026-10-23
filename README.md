@@ -13,7 +13,7 @@ The system collects satellite (MODIS) and weather data for the regions of Kazakh
 | supervisor: Bakiyeva Aigerim |
 
 
-# 2. Proposal
+# 1. Proposal
 
 ### Problem statement
 Grain production in Kazakhstan is largely rain-fed and depends on precipitation, so drought directly reduces yield. Final yield and loss figures are published by the Bureau of National Statistics only after harvest (for example, the 2025 publication "Gross harvest of agricultural crops" reports yield and the area of lost crops by region), which is too late for operational decisions. Satellite and weather data are openly available and updated regularly, but they are not combined into a single tool that compares the current season with a region's history, estimates risk in advance, and explains the estimate.
@@ -115,6 +115,46 @@ Status (22 Oct 2026): 19 sources collected: 14 journal articles or dataset paper
 
 ### Still to do
 Open each [verify] item and confirm bibliographic data; read the full text of sources 1, 6, 7, 12, 13; add 2-3 more non-Kazakhstan machine-learning yield forecasting references if the supervisor requests more breadth.
+
+# 4. Existing system comparison
+
+Requirement: 3-5 systems, 6-10 criteria, claims backed by sources. All values below were checked via web search on **22 October 2026**. Where a source did not state something, the cell says "not stated" (this is not the same as "absent"): confirm directly on the platform before final submission. Sources for EOSDA and OneSoil include third-party catalogues (Capterra, GetApp) in addition to vendor pages; vendor pages are preferred.
+
+### Systems and sources
+| System | Type | Sources checked |
+|---|---|---|
+| FAO ASIS | international agricultural drought monitoring | https://agritechobservatory.review.fao.org/en/agricultural-stress-index-system-asis ; https://www.preventionweb.net/publications/view/65847 |
+| Copernicus EDO/GDO | European and global drought observatories | https://drought.emergency.copernicus.eu/ ; https://data.jrc.ec.europa.eu/dataset/afa8a5ee-5473-439a-b062-ffdaedc38b2d ; https://cis2.eea.europa.eu/data/406 ; https://eu-space.europa.eu/news/unleashing-power-copernicus-enhancing-decision-making-european-and-global-drought-observatories |
+| Kazhydromet agrometeorological service | national service | https://www.kazhydromet.kz/uploads/files_calendar/12487/file/6a82fc8414382prognoz-usloviy-uborki-na-2026-g-okonchatelnyy.pdf ; https://kazhydromet.kz/uploads/files_calendar/5669/file/6662fa31bb71ekratkiy-obzor-za-3-dek-maya-2024-g.pdf |
+| EOSDA Crop Monitoring | commercial platform | https://eos.com/wp-content/docs/agriculture-consulting/EOSDA-solutions-for-Agriculture-Consultants.pdf ; https://www.capterra.com.sg/software/195553/eos-crop-monitoring |
+| OneSoil | commercial platform | https://onesoil.ai/platform ; https://www.getapp.com.au/software/2113874/onesoil |
+
+### Criteria (8)
+1. Coverage of Kazakhstan
+2. Spatial level
+3. Update frequency
+4. Yield forecast
+5. Early drought warning
+6. Result explanation
+7. Openness and cost of access
+8. Use of national statistics and local calibration
+
+### Comparison matrix
+| Criterion | FAO ASIS | Copernicus EDO/GDO | Kazhydromet | EOSDA | OneSoil |
+|---|---|---|---|---|---|
+| 1 Coverage of Kazakhstan | global service; Kazakhstan layer to confirm on the map | GDO has global indicators (e.g. SPI, a 10-day persistent-dry indicator); the Combined Drought Indicator is documented for Europe, global availability to confirm | national (state observation network) | global provider; Kazakhstan availability not stated | global app; Kazakhstan availability not stated |
+| 2 Spatial level | administrative level, for comparison with national statistics | gridded, about 5 km for the CDI | oblast and zone-level descriptions from station network | field level | field level |
+| 3 Update frequency | 10-day | CDI components computed daily; global indicator every 10 days; CDI published weekly (EEA catalogue) | decadal (10-day) reviews and seasonal forecasts | near-real-time per satellite pass | latest cloud-free image per field |
+| 4 Yield forecast | not stated | not stated | yield assessment of spring grains is part of observations; harvest-condition forecasts published; numeric yield model not verified | yield prediction mentioned in vendor materials | yield analysis tools in Pro (productivity zones, yield maps); forecast not stated |
+| 5 Early drought warning | agricultural drought hotspots from vegetation health index; lead time not stated | yes: Watch, Warning, Alert stages for agricultural drought | crop condition assessment and weather forecasts; formal drought warning lead time not verified | stress detection at field level | NDVI and moisture monitoring, short-range precipitation forecast; no drought warning stated |
+| 6 Explanation of result | index-based; feature-level explanation not stated | rule-based cascade (precipitation → soil moisture → vegetation anomaly) | textual descriptions of conditions and crop phases | indices shown (NDVI, NDMI, NDRE); explanation not stated | indices and AI agronomist advice |
+| 7 Openness and cost | free | data policy full and open | reviews published as PDFs on the website | free version and paid per-user plans | free core features; paid mobile and Pro plans |
+| 8 National statistics / local calibration | compared with administrative statistics; local calibration not stated | European calibration; Kazakhstan not stated | national ground network | not stated | not stated |
+
+Verification date for all cells: 22 October 2026. Cells marked "not stated" or "to confirm" are open items.
+
+### Conclusion
+Within the sources checked, the surveyed systems fall into three groups: global or European drought monitoring based on indices (ASIS, EDO/GDO), national agrometeorological reporting (Kazhydromet), and field-level commercial platforms (EOSDA, OneSoil). None of the sources found describes a regional-level system for Kazakhstan that combines (a) a yield forecast at several lead dates, (b) a drought risk level validated against national statistics and classical indices (VCI, SPI), and (c) a feature-level explanation of each result. This is the gap the project targets. The claim is limited to the sources checked and is not an exhaustive survey.
 
 
 ## Technologies (selected)
