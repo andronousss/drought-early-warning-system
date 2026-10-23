@@ -164,6 +164,82 @@ Verification date for all cells: 22 October 2026. Cells marked "not stated" or "
 ### Conclusion
 Within the sources checked, the surveyed systems fall into three groups: global or European drought monitoring based on indices (ASIS, EDO/GDO), national agrometeorological reporting (Kazhydromet), and field-level commercial platforms (EOSDA, OneSoil). None of the sources found describes a regional-level system for Kazakhstan that combines (a) a yield forecast at several lead dates, (b) a drought risk level validated against national statistics and classical indices (VCI, SPI), and (c) a feature-level explanation of each result. This is the gap the project targets. The claim is limited to the sources checked and is not an exhaustive survey.
 
+# 6. Requirements specification
+
+Priorities: **M** = must, **S** = should, **C** = could.
+Numeric quality thresholds (marked `[T]`) are fixed in this file by a commit **after EDA and before experiments begin**, so criteria are not tuned to results.
+
+## Functional requirements
+
+**FR-01 (M). Load satellite and weather data.**
+Load MODIS NDVI/EVI and weather data by region for a chosen period.
+*Accepted when:* a script reproducibly builds a region × 16-day window × indicator table, gaps are flagged, and the log records date and source.
+
+**FR-02 (M). Load Bureau of Statistics tables.**
+Load and parse tables of yield, area and lost crops.
+*Accepted when:* the parser reads files of all years, "x" and "-" become missing values, regions are mapped to one scheme, and tests on real files pass.
+
+**FR-03 (M). Compute features.**
+Compute season-phase features (NDVI, precipitation, temperature, VCI, SPI).
+*Accepted when:* features for year N do not use year-N yield data and a leakage test passes.
+
+**FR-04 (M). Forecast yield.**
+Forecast spring wheat yield by region at fixed lead dates before harvest.
+*Accepted when:* RMSE and MAE are reported for each lead date and the model beats baseline B1 on RMSE `[T]`.
+
+**FR-05 (M). Estimate drought risk.**
+Estimate the drought risk level (normal / watch / risk / critical).
+*Accepted when:* the level definition is documented, and recall, false alarms and lead time in weeks are measured `[T]`.
+
+**FR-06 (M). Map and dashboard.**
+Show a regional map and dashboard where the user chooses a region and lead date and sees the season versus the norm.
+*Accepted when:* a user gets risk and forecast for any region in at most 3 actions.
+
+**FR-07 (M). Explain results.**
+Explain each result (SHAP, season comparison with drought years).
+*Accepted when:* an explanation of feature contributions is available for every region.
+
+**FR-08 (S). Retrospective view.**
+Show a past year at a chosen date.
+*Accepted when:* for any year the system shows the forecast that would have been issued on that date.
+
+**FR-09 (C). Model comparison in the interface.**
+*Accepted when:* a model metrics table is available on a page.
+
+**FR-10 (C). Regional report export (CSV/PDF).**
+*Accepted when:* the file downloads and contains forecast, risk level and sources.
+
+## Non-functional requirements
+
+**NFR-01 (M). Reproducibility.**
+Results rebuild from raw data with one command.
+*Accepted when:* `make data && make train` in a clean environment yields the same metrics (fixed seed).
+
+**NFR-02 (M). Honest validation.**
+Split by years only, and additionally by regions.
+*Accepted when:* the splits are described in the verification plan and tests check them.
+
+**NFR-03 (M). Source transparency.**
+Every value in the UI shows its source and update date.
+*Accepted when:* the UI passes a checklist review.
+
+**NFR-04 (S). Performance.**
+The map page loads in `[T]` seconds on precomputed data.
+*Accepted when:* measured on a test machine.
+
+**NFR-05 (M). Data.**
+Use open aggregated data only, with no personal information.
+*Accepted when:* repository review shows `.gitignore` in place and no secrets committed.
+
+**NFR-06 (S). Responsive interface.**
+The interface is readable on a phone.
+*Accepted when:* checked at 375 px width.
+
+**NFR-07 (M). Documentation.**
+README and run instructions are provided.
+*Accepted when:* a new person runs the project from the instructions.
+
+
 
 ## Technologies (selected)
 Python (pandas, scikit-learn, LightGBM, SHAP), Google Earth Engine (`earthengine-api`), Parquet/GeoPackage, FastAPI, Streamlit (map and dashboard). Rationale: [docs/05-technology-comparison.md](docs/05-technology-comparison.md). (to be updated)
