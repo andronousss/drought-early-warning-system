@@ -7,7 +7,7 @@
 ## Summary
 The system collects satellite (MODIS) and weather data for the regions of Kazakhstan, compares the current season with the historical record, and produces an early drought-risk assessment and a spring wheat yield and other agricultures forecast at several lead times before harvest, with an explanation of each result.
 
-## Team and supervisor
+## Contributor and supervisor
 | Andreyev Alexander | <240848@astanait.edu.kz> |
 
 | supervisor: Bakiyeva Aigerim |
