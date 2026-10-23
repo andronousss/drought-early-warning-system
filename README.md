@@ -51,9 +51,6 @@ Wheat yield forecasting in Kazakhstan with remote sensing and ML has been studie
 
 # 3. Literature review
 
-Requirements: at least 12 sources, at least 8 scientific; most from the last 5 years, plus foundational works.
-Status (22 Oct 2026): 19 sources collected: 14 journal articles or dataset papers (rows 1, 2, 4, 5, 6, 8, 9, 10, 11, 14, 15, 16, 17, 19), 4 conference or workshop items (rows 3, 7, 12, 13) and 1 agency paper (row 18). At least 10 were published in 2021 or later (rows 1, 6, 7, 9, 10, 12, 13, 15, 17, 19); the years of rows 5, 8, 11, 14 and 16 are still to be verified. **Reading depth is stated per row**: "abstract" means only the abstract and visible parts were checked via search; "full text" means the whole article was read. Rows marked [verify] contain a field that was not visible in the search result. Before final submission, open each publication and confirm authors, year, venue and the numbers quoted below.
-
 ### Search protocol
 - Databases: Google Scholar, MDPI, Copernicus (EGU, ESSD), Frontiers, DOAJ, AGRIS, arXiv; searches run on 22 October 2026.
 - Queries used: `wheat yield forecasting Kazakhstan MODIS NDVI machine learning`; `agricultural drought monitoring Kazakhstan remote sensing VCI SPI wheat`; `spatial cross-validation data leakage crop yield prediction machine learning leave-one-year-out`; `SHAP interpretable machine learning wheat yield forecast satellite climate features lead time before harvest`; `CY-Bench benchmark dataset subnational crop yield forecasting`; `FAO ASIS Agricultural Stress Index System`.
@@ -118,7 +115,6 @@ Open each [verify] item and confirm bibliographic data; read the full text of so
 
 # 4. Existing system comparison
 
-Requirement: 3-5 systems, 6-10 criteria, claims backed by sources. All values below were checked via web search on **22 October 2026**. Where a source did not state something, the cell says "not stated" (this is not the same as "absent"): confirm directly on the platform before final submission. Sources for EOSDA and OneSoil include third-party catalogues (Capterra, GetApp) in addition to vendor pages; vendor pages are preferred.
 
 ### Systems and sources
 | System | Type | Sources checked |
