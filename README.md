@@ -14,7 +14,7 @@ The system collects satellite (MODIS) and weather data for the regions of Kazakh
 
 ## Links
 - YouTrack: https://andronousss.youtrack.cloud/projects/DIP
-- 
+
 # 1. Proposal
 
 ### Problem statement
