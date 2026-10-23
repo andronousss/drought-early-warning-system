@@ -12,7 +12,9 @@ The system collects satellite (MODIS) and weather data for the regions of Kazakh
 
 | supervisor: Bakiyeva Aigerim |
 
-
+## Links
+- YouTrack: https://andronousss.youtrack.cloud/projects/DIP
+- 
 # 1. Proposal
 
 ### Problem statement
@@ -76,40 +78,31 @@ Requirements: at least 12 sources, at least 8 of them scientific; most from the 
 5. Benchmarks and operational systems
 
 ### Source log
-Status: **Core** = likely to be cited and read in full; **Candidate** = read abstract, decide after; **Background** = keep only if more sources are needed.
-Reading depth so far is "abstract" for every source unless stated. Items marked [verify] have a field (authors, year, venue) that was not visible in the search result.
 
 ### Theme 1. Drought indices (Kazakhstan, Central Asia)
-- **[Core]** Ryssaliyeva L., Salnikov V., Lin Z., Raimbekova Z. (2025). Seasonal Sensitivity of Drought Indices in Northern Kazakhstan: A Comparative Evaluation and Selection of Optimal Indicators. *Sustainability* 17(21), 9413. DOI 10.3390/su17219413. Read: full text. Why: compares SPI, SPEI, HTC, MCZI with VCI/TCI/VHI for the target region; mentions a related funded early-warning project (grant AP25796409).
-- **[Core]** Aitekeyeva N. et al. (2020). Drought Risk Assessment in Cultivated Areas of Central Asia Using MODIS Time-Series Data. *Water* 12(6), 1738. Why: MODIS-based drought risk on cultivated land, a classical-index reference.
-- **[Candidate]** Comparison and Evaluation of Remote Sensing Indices for Agricultural Drought Monitoring over Kazakhstan. *ISPRS Archives* XLIII-B3-2020, 899. [verify authors]. Why: index comparison for Kazakhstan.
-- **[Background]** Kogan F. et al. (2003). AVHRR-Based Spectral Vegetation Index for Quantitative Assessment of Vegetation State and Productivity. *Photogramm. Eng. Remote Sens.* 69(8), 899-906. Why: foundational VCI work with Kazakhstan wheat.
-- **[Background]** Vitkovskaya I. et al. [verify title, year]. Integral vegetation condition index and HTC for drought and grain yield, Kazakhstan. EKTU journal.
+- Ryssaliyeva L., Salnikov V., Lin Z., Raimbekova Z. (2025). Seasonal Sensitivity of Drought Indices in Northern Kazakhstan: A Comparative Evaluation and Selection of Optimal Indicators. *Sustainability* 17(21), 9413. DOI 10.3390/su17219413. Read: full text. Why: compares SPI, SPEI, HTC, MCZI with VCI/TCI/VHI for the target region; mentions a related funded early-warning project (grant AP25796409).
+- Aitekeyeva N. et al. (2020). Drought Risk Assessment in Cultivated Areas of Central Asia Using MODIS Time-Series Data. *Water* 12(6), 1738. Why: MODIS-based drought risk on cultivated land, a classical-index reference.
+- Comparison and Evaluation of Remote Sensing Indices for Agricultural Drought Monitoring over Kazakhstan. *ISPRS Archives* XLIII-B3-2020, 899. [verify authors]. Why: index comparison for Kazakhstan.
 
 ### Theme 2. Wheat yield prediction in Kazakhstan
-- **[Core]** Alpysbay M. et al. (2026) [verify authors]. Crop-Masked Vegetation Indices and TerraClimate for District-Level Wheat Yield Prediction in Kazakhstan: SAVI Advantage, Climate Dominance, and Temporal Transferability Limits. *Agronomy* 16(13), 1264. DOI 10.3390/agronomy16131264. Why: closest related work (district level, spatial and temporal validation); find where its district yield data come from.
-- **[Core]** Improve State-Level Wheat Yield Forecasts in Kazakhstan on GEOGLAM's EO Data by Leveraging a Simple Spatial-Aware Technique (2023). ICLR workshop paper, arXiv 2306.04646 [verify authors]. Why: state-level yield forecasts for Kazakhstan; check its yield data source.
-- **[Candidate]** Comparative assessment of ML algorithms for forecasting wheat yields using climate and satellite vegetation indices. *Eastern-European Journal of Enterprise Technologies* [verify title, authors, year]. Why: model comparison on MODIS and ERA5 data for Kazakhstan.
-- **[Background]** Sadenova M.A. et al. (2022). Digitalization of Crop Production for Transition to Climate-optimized Agriculture Using Spring Wheat in East Kazakhstan as an Example. *Chem. Eng. Transactions* 96, 415-420. DOI 10.3303/CET2296070. Why: farm-level, small-sample example.
-- **[Background]** Sadenova M. et al. (2023) [verify venue, year]. Application of Machine Learning and Neural Networks to Predict the Yield of Cereals, Legumes, Oilseeds and Forage Crops in Kazakhstan.
-- **[Background]** Machine-learning yield modelling for winter wheat at a farm in East Kazakhstan. *Chem. Eng. Transactions* 88 [verify authors, year].
+-  Alpysbay M. et al. (2026) [verify authors]. Crop-Masked Vegetation Indices and TerraClimate for District-Level Wheat Yield Prediction in Kazakhstan: SAVI Advantage, Climate Dominance, and Temporal Transferability Limits. *Agronomy* 16(13), 1264. DOI 10.3390/agronomy16131264. Why: closest related work (district level, spatial and temporal validation); find where its district yield data come from.
+-  Improve State-Level Wheat Yield Forecasts in Kazakhstan on GEOGLAM's EO Data by Leveraging a Simple Spatial-Aware Technique (2023). ICLR workshop paper, arXiv 2306.04646 [verify authors]. Why: state-level yield forecasts for Kazakhstan; check its yield data source.
+-  Comparative assessment of ML algorithms for forecasting wheat yields using climate and satellite vegetation indices. *Eastern-European Journal of Enterprise Technologies* [verify title, authors, year]. Why: model comparison on MODIS and ERA5 data for Kazakhstan.
 
 ### Theme 3. Validation
-- **[Core]** Khechba K., Belgiu M., Laamrani A., Dong Q., Stein A., Chehbouni A. (2024). Spatial cross-validation of wheat yield estimations using remote sensing and machine learning. EGU24-22153 (conference abstract). Why: justifies spatial validation.
-- **[Core]** Sweet L.-B., Zscheischler J. (2022) [verify authors]. Using interpretable machine learning to identify compound meteorological drivers of crop failure. EGU22-5464 (conference presentation). Why: effect of the validation scheme on skill and interpretation.
-- **[Candidate]** Deployment-oriented evaluation of stage-specific information for rice yield prediction across years, sites and site-year environments in southern China [verify authors, year]. Why: compares several evaluation schemes on one problem.
+- Khechba K., Belgiu M., Laamrani A., Dong Q., Stein A., Chehbouni A. (2024). Spatial cross-validation of wheat yield estimations using remote sensing and machine learning. EGU24-22153 (conference abstract). Why: justifies spatial validation.
+- Sweet L.-B., Zscheischler J. (2022) [verify authors]. Using interpretable machine learning to identify compound meteorological drivers of crop failure. EGU22-5464 (conference presentation). Why: effect of the validation scheme on skill and interpretation.
+- Deployment-oriented evaluation of stage-specific information for rice yield prediction across years, sites and site-year environments in southern China [verify authors, year]. Why: compares several evaluation schemes on one problem.
 
 ### Theme 4. Interpretability and lead time
-- **[Core]** Joshi A., Pradhan B., Chakraborty S. et al. (2025) [verify full author list]. An explainable Bi-LSTM model for winter wheat yield prediction. *Frontiers in Plant Science*. Why: SHAP/LIME in wheat yield modelling.
-- **[Candidate]** Integrating satellite and climate data to predict wheat yield in Australia using machine learning approaches [verify authors, journal, year]. Why: wheat yield forecast with a stated lead time before maturity.
+- Joshi A., Pradhan B., Chakraborty S. et al. (2025) [verify full author list]. An explainable Bi-LSTM model for winter wheat yield prediction. *Frontiers in Plant Science*. Why: SHAP/LIME in wheat yield modelling.
+- Integrating satellite and climate data to predict wheat yield in Australia using machine learning approaches [verify authors, journal, year]. Why: wheat yield forecast with a stated lead time before maturity.
 
 ### Theme 5. Benchmarks and operational systems
-- **[Core]** Paudel D. et al. (2026). CY-Bench: a comprehensive benchmark dataset for sub-national crop yield forecasting. *Earth System Science Data* 18(6), 3997. Why: standard benchmark and protocol; **check whether Kazakhstan is in the country list**.
-- **[Candidate]** Cammalleri C. et al. (2021). A revision of the Combined Drought Indicator (CDI) used in the European Drought Observatory. *Nat. Hazards Earth Syst. Sci.* Why: model for a staged risk-level scheme.
-- **[Candidate]** Rojas O. et al. (2019). Surveillance of agricultural drought worldwide from space using the FAO Agriculture Stress Index System (ASIS). Contributing paper to the Global Assessment Report 2019 (agency paper, not peer-reviewed article). Why: existing-system reference, see `04-existing-systems.md`.
+-  Paudel D. et al. (2026). CY-Bench: a comprehensive benchmark dataset for sub-national crop yield forecasting. *Earth System Science Data* 18(6), 3997. Why: standard benchmark and protocol; **check whether Kazakhstan is in the country list**.
+- Cammalleri C. et al. (2021). A revision of the Combined Drought Indicator (CDI) used in the European Drought Observatory. *Nat. Hazards Earth Syst. Sci.* Why: model for a staged risk-level scheme.
+- Rojas O. et al. (2019). Surveillance of agricultural drought worldwide from space using the FAO Agriculture Stress Index System (ASIS). Contributing paper to the Global Assessment Report 2019 (agency paper, not peer-reviewed article). Why: existing-system reference, see `04-existing-systems.md`.
 
-### Counts (22 Oct 2026)
-19 sources logged: 8 Core, 6 Candidate, 5 Background. Types: 14 journal articles or dataset papers, 4 conference or workshop items, 1 agency paper. At least 10 are from 2021 or later; years of several [verify] items are still to be confirmed.
 
 ### Questions to answer while reading
 1. How is drought or yield loss defined and validated in each Kazakhstan study, and is there any detection-style evaluation (false alarms, lead time)?
@@ -126,7 +119,6 @@ Reading depth so far is "abstract" for every source unless stated. Items marked 
 - Add 2-3 non-Kazakhstan ML yield forecasting references if more breadth is needed.
 
 # 4. Existing system comparison
-
 
 ### Systems and sources
 | System | Type | Sources checked |
@@ -240,13 +232,10 @@ README and run instructions are provided.
 *Accepted when:* a new person runs the project from the instructions.
 
 
-
 ## Technologies (selected)
 Python (pandas, scikit-learn, LightGBM, SHAP), Google Earth Engine (`earthengine-api`), Parquet/GeoPackage, FastAPI, Streamlit (map and dashboard). Rationale: [docs/05-technology-comparison.md](docs/05-technology-comparison.md). (to be updated)
 
-## Links
-- YouTrack: https://andronousss.youtrack.cloud/projects/DIP
-- Documentation: [docs/](docs/), pre-defense checklist: [docs/00-predefense-checklist.md](docs/00-predefense-checklist.md)
+
 
 ## Running and testing
 To be added once executable code exists (`make data`, `make train`, `make app`, `pytest`).
